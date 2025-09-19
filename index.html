@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pankaj Sharma | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Sharma - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav>
-      <h1>Pankaj Sharma</h1>
-      <ul>
+<body id="mainBody">
+
+  <!-- Header -->
+  <header id="main-header">
+    <nav id="main-nav">
+      <h1 id="site-title">Pankaj Sharma</h1>
+      <ul id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -22,48 +23,57 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Hello, I’m Pankaj 👋</h2>
-    <p>Android Developer | Kotlin | Jetpack Compose | Firebase | Clean Architecture</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an Android developer with 5+ years of experience building scalable, modern apps. Skilled in Kotlin, MVVM, Jetpack Compose, Firebase, and clean architecture.</p>
-  </section>
+  <!-- Intro Section -->
+  <div id="intro-section">
+    <div id="intro-content">
+      <div id="intro-text">
+        <h2 id="about">Introduction</h2> 
+        <p>
+          Hi, my name is Pankaj Sharma. I’m an Android Developer with over 7 years of experience 
+          in building native Android applications using the latest technologies like Kotlin, Jetpack Compose, 
+          Coroutines, and Firebase. I enjoy creating scalable, user-friendly apps. 
+          Outside of work, I like going to the gym, practicing yoga, and exploring new ideas for personal projects. 
+        </p>
+      </div>
+      <div id="intro-image">
+        <img src="profile.jpg" alt="Profile Photo">
+      </div>
+    </div>
+  </div>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <ul class="skills">
-      <li>Kotlin</li>
-      <li>Java</li>
-      <li>Jetpack Compose</li>
-      <li>Firebase</li>
-      <li>Room Database</li>
-      <li>MVVM / Clean Architecture</li>
-      <li>Git & GitHub</li>
+    <ul>
+      <li><strong>Programming Languages:</strong> Kotlin, Java</li>
+      <li><strong>Mobile Development:</strong> Android (Native), Jetpack Compose</li>
+      <li><strong>Architecture & Tools:</strong> MVVM, Clean Architecture, Hilt/Dagger, Coroutines</li>
+      <li><strong>Databases & APIs:</strong> Room, Firebase, REST APIs</li>
+      <li><strong>Version Control:</strong> Git, GitHub</li>
+      <li><strong>Other Skills:</strong> UI/UX Design, Debugging, Agile Methodologies</li>
     </ul>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Bhakti Saroch</h3>
-        <p>Hindu devotional app with Aarti, Chalisa, and Festivals using Jetpack Compose + Firebase + Room (offline-first).</p>
-      </div>
+    <div class="projects-container">
       <div class="project-card">
         <h3>OdigoLive</h3>
-        <p>Social live streaming app developed at Applify with Android native stack.</p>
+        <p>A social networking app built with Kotlin and Firebase, enabling live streaming and chat features.</p>
+        <a href="#" class="project-link">View Project</a>
       </div>
+
       <div class="project-card">
-        <h3>MeListen</h3>
-        <p>Music streaming app with offline-first support and personalized playlists.</p>
+        <h3>Melisten</h3>
+        <p>A music streaming app with offline support, built using MVVM, Room DB, and Jetpack Compose.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Roka</h3>
+        <p>A matrimonial app with scalable architecture, integrating chat, profiles, and notifications.</p>
+        <a href="#" class="project-link">View Project</a>
       </div>
     </div>
   </section>
@@ -71,33 +81,80 @@
   <!-- Experience Section -->
   <section id="experience">
     <h2>Experience</h2>
-    <ul>
-      <li><strong>Talent Bridge</strong> – Android Developer</li>
-      <li><strong>Applify Pvt Ltd</strong> – Senior Android Developer</li>
-      <li><strong>Aloha Industries</strong> – Android Developer</li>
-      <li><strong>Primotech Pvt Ltd</strong> – Intern</li>
-    </ul>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Talentbridge Technologies Pvt. Ltd.</h3>
+        <span class="exp-duration">Jan 2024 – Present</span>
+        <p>Building scalable apps with Jetpack Compose, MVVM, and Firebase. Focus on performance and offline-first design.</p>
+      </div>
+      <div class="experience-card">
+        <h3>Applify Pvt. Ltd.</h3>
+        <span class="exp-duration">May 2020 – Dec 2023</span>
+        <p>Led Android projects, implemented modern architectures, and enhanced UI/UX with Compose.</p>
+      </div>
+      <div class="experience-card">
+        <h3>Aloha Industries Pvt. Ltd.</h3>
+        <span class="exp-duration">Dec 2018 – Apr 2020</span>
+        <p>Developed Android apps in Java/Kotlin, integrated APIs, and improved app performance.</p>
+      </div>
+      <div class="experience-card">
+        <h3>Primotech Pvt. Ltd.</h3>
+        <span class="exp-duration">Jan 2018 – Nov 2018</span>
+        <p>Started as an intern, contributed to Android app development, UI, and debugging.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Education Section -->
   <section id="education">
     <h2>Education</h2>
-    <p><strong>MCA</strong> – IET Bhaddal Technical Campus (2013–2015)</p>
-    <p><strong>BCA</strong> – DAV College Kangra (2009–2013)</p>
+    <div class="education-container">
+      <div class="education-card">
+        <h3>MCA</h3>
+        <span class="edu-duration">Aug 2013 – Jun 2015</span>
+        <p>IET Bhaddal Technical Campus</p>
+      </div>
+      <div class="education-card">
+        <h3>BCA</h3>
+        <span class="edu-duration">Aug 2009 – Jun 2013</span>
+        <p>DAV College Kangra</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:pankajsharma@gmail.com">pankajsharma@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/pankajsharmaandroiddeveloper/" target="_blank">linkedin.com/in/pankajsharmaandroiddeveloper</a></p>
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <p>I am always open to discussing Android development, innovative solutions, and collaboration opportunities. Let’s connect and build something impactful.</p>
+        <p><strong>Email:</strong> pankajsharmaadadi@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7018641350</p>
+        <p><strong>Location:</strong> Bangalore, India</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Send Message</button>
+        <p id="formMessage" style="margin-top:10px;"></p>
+      </form>
+
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Pankaj Sharma. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <!-- Firebase SDK (modular v9) -->
+  <script type="module" src="script.js"></script>
 </body>
 </html>

@@ -553,3 +553,44 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ================= FOOTER ================= */
+#main-footer {
+  background-color: var(--dark-purple);  /* using your theme */
+  color: var(--white);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#main-footer .footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#main-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--light-gray);
+}
+
+#main-footer .footer-links {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#main-footer .footer-links a {
+  color: var(--light-cyan);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+#main-footer .footer-links a:hover {
+  color: var(--white);
+}
